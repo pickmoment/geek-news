@@ -5,15 +5,16 @@
 ## 설치
 
 ```bash
-go install geek-news@latest
+go install github.com/pickmoment/geek-news@latest
 ```
 
-또는 직접 빌드:
+또는 git으로 클론 후 빌드:
 
 ```bash
-git clone https://github.com/pickmoment/geek-news
+git clone https://github.com/pickmoment/geek-news.git
 cd geek-news
 go build -o geek-news .
+sudo mv geek-news /usr/local/bin/   # PATH에 추가
 ```
 
 ## 사용법
