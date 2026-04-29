@@ -8,6 +8,12 @@
 go install github.com/pickmoment/geek-news@latest
 ```
 
+> `go install`은 `$GOPATH/bin`(기본: `~/go/bin`)에 바이너리를 설치합니다.
+> `geek-news: command not found`가 뜨면 아래를 셸 설정 파일(`.zshrc` / `.bashrc`)에 추가하세요.
+> ```bash
+> export PATH=$PATH:$(go env GOPATH)/bin
+> ```
+
 또는 git으로 클론 후 빌드:
 
 ```bash
